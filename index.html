@@ -10,11 +10,7 @@ body {
   font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   background: #f0f2f5; color: #222; font-size: 14px;
 }
-a { color: inherit; text-decoration: none; }
-
 .page { max-width: 1100px; margin: 28px auto; padding: 0 16px 48px; }
-
-/* ── 标题 ── */
 .title-block {
   background: linear-gradient(135deg, #1a237e 0%, #283593 60%, #3949ab 100%);
   color: #fff; border-radius: 16px; padding: 28px 32px; margin-bottom: 22px;
@@ -22,8 +18,6 @@ a { color: inherit; text-decoration: none; }
 .title-block h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
 .title-block .meta { margin-top: 10px; font-size: 13px; opacity: .85;
                      display: flex; flex-wrap: wrap; gap: 20px; }
-
-/* ── 摘要卡片 ── */
 .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 22px; }
 .card { background: #fff; border-radius: 12px; padding: 18px 16px;
         box-shadow: 0 1px 8px rgba(0,0,0,.07); text-align: center; }
@@ -33,8 +27,6 @@ a { color: inherit; text-decoration: none; }
 .card.c4 .num { color: #c62828; }
 .card.c3 .num { color: #e65100; }
 .card.c2 .num { color: #1565c0; }
-
-/* ── 区块通用 ── */
 .section {
   background: #fff; border-radius: 12px; padding: 20px 24px;
   box-shadow: 0 1px 8px rgba(0,0,0,.07); margin-bottom: 22px;
@@ -44,15 +36,12 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: 12px; margin-bottom: 16px; border-bottom: 2px solid #f0f2f5;
   display: flex; align-items: center; gap: 8px;
 }
-
-/* ── 跨平台热度表 ── */
 table { width: 100%; border-collapse: collapse; }
 th { font-size: 12px; color: #999; font-weight: 600; padding: 7px 10px;
      text-align: left; border-bottom: 1px solid #eee; white-space: nowrap; }
 td { padding: 8px 10px; border-bottom: 1px solid #f5f5f5; vertical-align: middle; }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: #fafbfc; }
-
 .game-name { font-size: 14px; font-weight: 500; }
 .rank-num {
   display: inline-flex; align-items: center; justify-content: center;
@@ -62,8 +51,6 @@ tr:hover td { background: #fafbfc; }
 .rank-num.t1 { background: linear-gradient(135deg,#FFD700,#FFA500); color: #fff; }
 .rank-num.t2 { background: linear-gradient(135deg,#C0C0C0,#9e9e9e); color: #fff; }
 .rank-num.t3 { background: linear-gradient(135deg,#CD7F32,#a1662f); color: #fff; }
-
-/* 平台标签 */
 .plat {
   display: inline-flex; align-items: center; gap: 3px;
   font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 10px;
@@ -74,35 +61,26 @@ tr:hover td { background: #fafbfc; }
 .plat-oppo { background: #e8f5e9; color: #2e7d32; }
 .plat-hn   { background: #f3e5f5; color: #6a1b9a; }
 .plat-mi   { background: #fff3e0; color: #e65100; }
-
-/* 热度条 */
 .heat-bar { display: inline-block; height: 8px; border-radius: 4px; vertical-align: middle; }
 .heat-4 { background: #c62828; width: 80px; }
 .heat-3 { background: #e65100; width: 60px; }
 .heat-2 { background: #1565c0; width: 40px; }
 .heat-1 { background: #bbb; width: 20px; }
-
-/* ── 五平台榜单并排 ── */
 .platforms-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-  margin-bottom: 22px;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 22px;
 }
 .plat-card {
   background: #fff; border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0,0,0,.07); overflow: hidden;
 }
 .plat-header {
-  padding: 12px 14px; font-size: 13px; font-weight: 700; color: #fff;
-  letter-spacing: .5px;
+  padding: 12px 14px; font-size: 13px; font-weight: 700; color: #fff; letter-spacing: .5px;
 }
 .plat-header.hw   { background: linear-gradient(135deg,#e53935,#b71c1c); }
 .plat-header.vivo { background: linear-gradient(135deg,#1e88e5,#0d47a1); }
 .plat-header.oppo { background: linear-gradient(135deg,#43a047,#1b5e20); }
 .plat-header.hn   { background: linear-gradient(135deg,#8e24aa,#4a148c); }
 .plat-header.mi   { background: linear-gradient(135deg,#fb8c00,#bf360c); }
-
 .plat-body { padding: 6px 0; }
 .plat-row {
   display: flex; align-items: center; gap: 8px;
@@ -118,15 +96,11 @@ tr:hover td { background: #fafbfc; }
 .plat-rank.r2 { background: #C0C0C0; color: #fff; }
 .plat-rank.r3 { background: #CD7F32; color: #fff; }
 .plat-rank.rn { background: #f0f0f0; color: #888; }
-.plat-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-/* 高亮跨平台游戏 */
 .cross2 { color: #1565c0; font-weight: 600; }
 .cross3 { color: #e65100; font-weight: 700; }
 .cross4 { color: #c62828; font-weight: 800; }
-
-/* ── footer ── */
+.plat-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .footer { text-align: center; font-size: 11px; color: #bbb; margin-top: 24px; }
-
 @media (max-width: 900px) {
   .platforms-grid { grid-template-columns: repeat(2, 1fr); }
   .summary { grid-template-columns: repeat(2, 1fr); }
@@ -134,16 +108,11 @@ tr:hover td { background: #fafbfc; }
 @media (max-width: 600px) {
   .platforms-grid { grid-template-columns: 1fr; }
 }
-@media print {
-  body { background: #fff; }
-  .page { margin: 0; padding: 10px; }
-}
 </style>
 </head>
 <body>
 <div class="page">
 
-  <!-- ═══ 标题 ═══ -->
   <div class="title-block">
     <h1>📊 竞渠监控 · 五平台预约榜汇总</h1>
     <div class="meta">
@@ -154,27 +123,13 @@ tr:hover td { background: #fafbfc; }
     </div>
   </div>
 
-  <!-- ═══ 摘要卡片 ═══ -->
   <div class="summary">
-    <div class="card c1">
-      <div class="num">56</div>
-      <div class="label">全平台独立游戏数</div>
-    </div>
-    <div class="card c4">
-      <div class="num">4</div>
-      <div class="label">四平台同上（高热度）</div>
-    </div>
-    <div class="card c3">
-      <div class="num">9</div>
-      <div class="label">三平台同上</div>
-    </div>
-    <div class="card c2">
-      <div class="num">14</div>
-      <div class="label">双平台同上</div>
-    </div>
+    <div class="card c1"><div class="num">56</div><div class="label">全平台独立游戏数</div></div>
+    <div class="card c4"><div class="num">4</div><div class="label">四平台同上（高热度）</div></div>
+    <div class="card c3"><div class="num">9</div><div class="label">三平台同上</div></div>
+    <div class="card c2"><div class="num">14</div><div class="label">双平台同上</div></div>
   </div>
 
-  <!-- ═══ 跨平台热度榜 ═══ -->
   <div class="section">
     <div class="section-title">🔥 跨平台热度榜（同时上榜 ≥2 个平台）</div>
     <table>
@@ -188,453 +143,323 @@ tr:hover td { background: #fafbfc; }
         </tr>
       </thead>
       <tbody>
-        <!-- 4平台 -->
         <tr>
           <td><span class="rank-num t1">1</span></td>
-          <td class="game-name cross4">心跳陷落</td>
-          <td style="font-weight:800;color:#c62828">4</td>
+          <td class="game-name cross4">耀世格斗</td>
+          <td style="font-weight:700;color:#c62828">4</td>
           <td><span class="heat-bar heat-4"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #9</span>
-            <span class="plat plat-vivo">vivo #20</span>
-            <span class="plat plat-hn">荣耀 #6</span>
-            <span class="plat plat-mi">小米 #13</span>
-          </td>
+          <td><span class="plat plat-vivo">#2 vivo</span><span class="plat plat-mi">#2 小米</span><span class="plat plat-hn">#8 荣耀</span><span class="plat plat-oppo">#12 OPPO</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t1">2</span></td>
-          <td class="game-name cross4">王者万象棋</td>
-          <td style="font-weight:800;color:#c62828">4</td>
+          <td class="game-name cross4">欢乐斗萌将</td>
+          <td style="font-weight:700;color:#c62828">4</td>
           <td><span class="heat-bar heat-4"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #5</span>
-            <span class="plat plat-vivo">vivo #7</span>
-            <span class="plat plat-hn">荣耀 #14</span>
-            <span class="plat plat-mi">小米 #12</span>
-          </td>
+          <td><span class="plat plat-oppo">#3 OPPO</span><span class="plat plat-vivo">#8 vivo</span><span class="plat plat-hn">#9 荣耀</span><span class="plat plat-mi">#15 小米</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t1">3</span></td>
-          <td class="game-name cross4">欢乐斗萌将</td>
-          <td style="font-weight:800;color:#c62828">4</td>
+          <td class="game-name cross4">王者万象棋</td>
+          <td style="font-weight:700;color:#c62828">4</td>
           <td><span class="heat-bar heat-4"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #8</span>
-            <span class="plat plat-oppo">OPPO #3</span>
-            <span class="plat plat-hn">荣耀 #9</span>
-            <span class="plat plat-mi">小米 #15</span>
-          </td>
+          <td><span class="plat plat-hw">#5 华为</span><span class="plat plat-vivo">#7 vivo</span><span class="plat plat-mi">#12 小米</span><span class="plat plat-hn">#14 荣耀</span></td>
         </tr>
         <tr>
-          <td><span class="rank-num t1">4</span></td>
-          <td class="game-name cross4">耀世格斗</td>
-          <td style="font-weight:800;color:#c62828">4</td>
+          <td><span class="rank-num t2">4</span></td>
+          <td class="game-name cross4">心跳陷落</td>
+          <td style="font-weight:700;color:#c62828">4</td>
           <td><span class="heat-bar heat-4"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #2</span>
-            <span class="plat plat-oppo">OPPO #12</span>
-            <span class="plat plat-hn">荣耀 #8</span>
-            <span class="plat plat-mi">小米 #2</span>
-          </td>
+          <td><span class="plat plat-hn">#6 荣耀</span><span class="plat plat-hw">#9 华为</span><span class="plat plat-mi">#13 小米</span><span class="plat plat-vivo">#20 vivo</span></td>
         </tr>
-        <!-- 3平台 -->
         <tr>
           <td><span class="rank-num t2">5</span></td>
           <td class="game-name cross3">夜幕之下</td>
           <td style="font-weight:700;color:#e65100">3</td>
           <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #7</span>
-            <span class="plat plat-oppo">OPPO #11</span>
-            <span class="plat plat-mi">小米 #1</span>
-          </td>
+          <td><span class="plat plat-mi">#1 小米</span><span class="plat plat-hw">#7 华为</span><span class="plat plat-oppo">#11 OPPO</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t2">6</span></td>
-          <td class="game-name cross3">遗忘之海</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #16</span>
-            <span class="plat plat-vivo">vivo #16</span>
-            <span class="plat plat-hn">荣耀 #7</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">7</span></td>
-          <td class="game-name cross3">异人之下</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #20</span>
-            <span class="plat plat-oppo">OPPO #16</span>
-            <span class="plat plat-hn">荣耀 #2</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">8</span></td>
-          <td class="game-name cross3">三国：百将牌</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #11</span>
-            <span class="plat plat-hn">荣耀 #5</span>
-            <span class="plat plat-mi">小米 #18</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">9</span></td>
-          <td class="game-name cross3">卡厄思梦境</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #18</span>
-            <span class="plat plat-oppo">OPPO #17</span>
-            <span class="plat plat-mi">小米 #10</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">10</span></td>
-          <td class="game-name cross3">镭明闪击</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #11</span>
-            <span class="plat plat-oppo">OPPO #8</span>
-            <span class="plat plat-mi">小米 #3</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">11</span></td>
-          <td class="game-name cross3">勇者幻兽录</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #10</span>
-            <span class="plat plat-oppo">OPPO #1</span>
-            <span class="plat plat-hn">荣耀 #10</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">12</span></td>
-          <td class="game-name cross3">大道仙途</td>
-          <td style="font-weight:700;color:#e65100">3</td>
-          <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #4</span>
-            <span class="plat plat-oppo">OPPO #9</span>
-            <span class="plat plat-mi">小米 #19</span>
-          </td>
-        </tr>
-        <tr>
-          <td><span class="rank-num t2">13</span></td>
           <td class="game-name cross3">遮天：帝路争锋</td>
           <td style="font-weight:700;color:#e65100">3</td>
           <td><span class="heat-bar heat-3"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #12</span>
-            <span class="plat plat-oppo">OPPO #4</span>
-            <span class="plat plat-mi">小米 #4</span>
-          </td>
+          <td><span class="plat plat-oppo">#4 OPPO</span><span class="plat plat-mi">#4 小米</span><span class="plat plat-vivo">#12 vivo</span></td>
         </tr>
-        <!-- 2平台 -->
+        <tr>
+          <td><span class="rank-num t3">7</span></td>
+          <td class="game-name cross3">勇者幻兽录</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-oppo">#1 OPPO</span><span class="plat plat-vivo">#10 vivo</span><span class="plat plat-hn">#10 荣耀</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num t3">8</span></td>
+          <td class="game-name cross3">镭明闪击</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-mi">#3 小米</span><span class="plat plat-oppo">#8 OPPO</span><span class="plat plat-vivo">#11 vivo</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num t3">9</span></td>
+          <td class="game-name cross3">大道仙途</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-vivo">#4 vivo</span><span class="plat plat-oppo">#9 OPPO</span><span class="plat plat-mi">#19 小米</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num t3">10</span></td>
+          <td class="game-name cross3">三国：百将牌</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-hn">#5 荣耀</span><span class="plat plat-hw">#11 华为</span><span class="plat plat-mi">#18 小米</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num t3">11</span></td>
+          <td class="game-name cross3">异人之下</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-hn">#2 荣耀</span><span class="plat plat-oppo">#16 OPPO</span><span class="plat plat-hw">#20 华为</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num t3">12</span></td>
+          <td class="game-name cross3">遗忘之海</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-hn">#7 荣耀</span><span class="plat plat-hw">#16 华为</span><span class="plat plat-vivo">#16 vivo</span></td>
+        </tr>
+        <tr>
+          <td><span class="rank-num t3">13</span></td>
+          <td class="game-name cross3">卡厄思梦境</td>
+          <td style="font-weight:700;color:#e65100">3</td>
+          <td><span class="heat-bar heat-3"></span></td>
+          <td><span class="plat plat-mi">#10 小米</span><span class="plat plat-oppo">#17 OPPO</span><span class="plat plat-vivo">#18 vivo</span></td>
+        </tr>
         <tr>
           <td><span class="rank-num t3">14</span></td>
-          <td class="game-name cross2">向末日开炮</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">失控进化</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #2</span>
-            <span class="plat plat-hn">荣耀 #4</span>
-          </td>
+          <td><span class="plat plat-vivo">#1 vivo</span><span class="plat plat-hw">#4 华为</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">15</span></td>
-          <td class="game-name cross2">失控进化</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">向末日开炮</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #4</span>
-            <span class="plat plat-vivo">vivo #1</span>
-          </td>
+          <td><span class="plat plat-hw">#2 华为</span><span class="plat plat-hn">#4 荣耀</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">16</span></td>
-          <td class="game-name cross2">头号禁区</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">愤怒的小鸟：经典归来</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #13</span>
-            <span class="plat plat-hn">荣耀 #15</span>
-          </td>
+          <td><span class="plat plat-hw">#3 华为</span><span class="plat plat-mi">#5 小米</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">17</span></td>
-          <td class="game-name cross2">斗破苍穹：异火降世</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">萌宠之森</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #15</span>
-            <span class="plat plat-oppo">OPPO #15</span>
-          </td>
+          <td><span class="plat plat-vivo">#3 vivo</span><span class="plat plat-mi">#6 小米</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">18</span></td>
-          <td class="game-name cross2">愤怒的小鸟：经典归来</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">斗破苍穹：斗帝之路</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #3</span>
-            <span class="plat plat-mi">小米 #5</span>
-          </td>
+          <td><span class="plat plat-oppo">#5 OPPO</span><span class="plat plat-vivo">#6 vivo</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">19</span></td>
-          <td class="game-name cross2">特种部队：集结</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">宗师之上</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-hw">华为 #8</span>
-            <span class="plat plat-mi">小米 #14</span>
-          </td>
+          <td><span class="plat plat-oppo">#6 OPPO</span><span class="plat plat-hn">#11 荣耀</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">20</span></td>
-          <td class="game-name cross2">斗破苍穹：斗帝之路</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">神将传说</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #6</span>
-            <span class="plat plat-oppo">OPPO #5</span>
-          </td>
+          <td><span class="plat plat-oppo">#7 OPPO</span><span class="plat plat-vivo">#13 vivo</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">21</span></td>
-          <td class="game-name cross2">神将传说</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">盗墓笔记：启程</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #13</span>
-            <span class="plat plat-oppo">OPPO #7</span>
-          </td>
+          <td><span class="plat plat-mi">#8 小米</span><span class="plat plat-oppo">#13 OPPO</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">22</span></td>
-          <td class="game-name cross2">萌宠之森</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">特种部队：集结</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #3</span>
-            <span class="plat plat-mi">小米 #6</span>
-          </td>
+          <td><span class="plat plat-hw">#8 华为</span><span class="plat plat-mi">#14 小米</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">23</span></td>
           <td class="game-name cross2">驯龙之旅</td>
-          <td style="color:#1565c0">2</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #15</span>
-            <span class="plat plat-mi">小米 #7</span>
-          </td>
+          <td><span class="plat plat-mi">#7 小米</span><span class="plat plat-vivo">#15 vivo</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">24</span></td>
-          <td class="game-name cross2">斗罗大陆：零</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">头号禁区</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-vivo">vivo #17</span>
-            <span class="plat plat-mi">小米 #20</span>
-          </td>
+          <td><span class="plat plat-hw">#13 华为</span><span class="plat plat-hn">#15 荣耀</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">25</span></td>
-          <td class="game-name cross2">盗墓笔记：启程</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">斗破苍穹：异火降世</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-oppo">OPPO #13</span>
-            <span class="plat plat-mi">小米 #8</span>
-          </td>
+          <td><span class="plat plat-hw">#15 华为</span><span class="plat plat-oppo">#15 OPPO</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">26</span></td>
-          <td class="game-name cross2">宗师之上</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">时空猎人•觉醒</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-oppo">OPPO #6</span>
-            <span class="plat plat-hn">荣耀 #11</span>
-          </td>
+          <td><span class="plat plat-hn">#16 荣耀</span><span class="plat plat-oppo">#19 OPPO</span></td>
         </tr>
         <tr>
           <td><span class="rank-num t3">27</span></td>
-          <td class="game-name cross2">时空猎人•觉醒</td>
-          <td style="color:#1565c0">2</td>
+          <td class="game-name cross2">斗罗大陆：零</td>
+          <td style="font-weight:700;color:#1565c0">2</td>
           <td><span class="heat-bar heat-2"></span></td>
-          <td>
-            <span class="plat plat-oppo">OPPO #19</span>
-            <span class="plat plat-hn">荣耀 #16</span>
-          </td>
-        </tr>
-      </tbody>
+          <td><span class="plat plat-vivo">#17 vivo</span><span class="plat plat-mi">#20 小米</span></td>
+        </tr></tbody>
     </table>
   </div>
 
-  <!-- ═══ 五平台并排榜单 ═══ -->
-  <div class="section-title" style="margin-bottom:14px; font-size:15px; font-weight:700; color:#333; display:flex; align-items:center; gap:8px;">
+  <div class="section-title" style="margin-bottom:14px;font-size:15px;font-weight:700;color:#333;display:flex;align-items:center;gap:8px;">
     📋 各平台 Top 20 完整榜单
     <span style="font-size:12px;font-weight:400;color:#888;">颜色标注：<span class="cross4">■</span>4平台 <span class="cross3">■</span>3平台 <span class="cross2">■</span>2平台</span>
   </div>
   <div class="platforms-grid">
-
-    <!-- 华为 -->
     <div class="plat-card">
       <div class="plat-header hw">🔴 华为_预约榜</div>
-      <div class="plat-body">
-        <div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name">粒粒的小人国</span></div>
-        <div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross2">向末日开炮</span></div>
-        <div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross2">愤怒的小鸟：经典归来</span></div>
-        <div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross2">失控进化</span></div>
-        <div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross4">王者万象棋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name">饥困荒野</span></div>
-        <div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross3">夜幕之下</span></div>
-        <div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross2">特种部队：集结</span></div>
-        <div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name cross4">心跳陷落</span></div>
-        <div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name">伊莫</span></div>
-        <div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross3">三国：百将牌</span></div>
-        <div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name">诡秘之主</span></div>
-        <div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross2">头号禁区</span></div>
-        <div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name" style="color:#bbb;font-style:italic">旅头</span></div>
-        <div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">斗破苍穹：异火降世</span></div>
-        <div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross3">遗忘之海</span></div>
-        <div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name">星绘友晴天</span></div>
-        <div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name">吞噬星空</span></div>
-        <div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name" style="color:#bbb;font-style:italic">奧星热浪</span></div>
-        <div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name cross3">异人之下</span></div>
-      </div>
+      <div class="plat-body"><div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name ">粒粒的小人国</span></div>
+<div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross2">向末日开炮</span></div>
+<div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross2">愤怒的小鸟：经典归来</span></div>
+<div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross2">失控进化</span></div>
+<div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross4">王者万象棋</span></div>
+<div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name ">饥困荒野</span></div>
+<div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross3">夜幕之下</span></div>
+<div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross2">特种部队：集结</span></div>
+<div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name cross4">心跳陷落</span></div>
+<div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name ">伊莫</span></div>
+<div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross3">三国：百将牌</span></div>
+<div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name ">诡秘之主</span></div>
+<div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross2">头号禁区</span></div>
+<div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name ">旅头</span></div>
+<div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">斗破苍穹：异火降世</span></div>
+<div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross3">遗忘之海</span></div>
+<div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name ">星绘友晴天</span></div>
+<div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name ">吞噬星空</span></div>
+<div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name ">奧星热浪</span></div>
+<div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name cross3">异人之下</span></div>
+</div>
     </div>
-
-    <!-- vivo -->
     <div class="plat-card">
       <div class="plat-header vivo">🔵 vivo_预约榜</div>
-      <div class="plat-body">
-        <div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name cross2">失控进化</span></div>
-        <div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross4">耀世格斗</span></div>
-        <div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross2">萌宠之森</span></div>
-        <div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross3">大道仙途</span></div>
-        <div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name">真魂修仙</span></div>
-        <div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross2">斗破苍穹：斗帝之路</span></div>
-        <div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross4">王者万象棋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross4">欢乐斗萌将</span></div>
-        <div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name">幻灵格斗</span></div>
-        <div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name cross3">勇者幻兽录</span></div>
-        <div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross3">镭明闪击</span></div>
-        <div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name cross3">遮天：帝路争锋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross2">神将传说</span></div>
-        <div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name">梦幻新诛仙：轻享</span></div>
-        <div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">驯龙之旅</span></div>
-        <div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross3">遗忘之海</span></div>
-        <div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name cross2">斗罗大陆：零</span></div>
-        <div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name cross3">卡厄思梦境</span></div>
-        <div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name">王者之弈</span></div>
-        <div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name cross4">心跳陷落</span></div>
-      </div>
+      <div class="plat-body"><div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name cross2">失控进化</span></div>
+<div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross4">耀世格斗</span></div>
+<div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross2">萌宠之森</span></div>
+<div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross3">大道仙途</span></div>
+<div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name ">真魂修仙</span></div>
+<div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross2">斗破苍穹：斗帝之路</span></div>
+<div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross4">王者万象棋</span></div>
+<div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross4">欢乐斗萌将</span></div>
+<div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name ">幻灵格斗</span></div>
+<div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name cross3">勇者幻兽录</span></div>
+<div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross3">镭明闪击</span></div>
+<div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name cross3">遮天：帝路争锋</span></div>
+<div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross2">神将传说</span></div>
+<div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name ">梦幻新诛仙：轻享</span></div>
+<div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">驯龙之旅</span></div>
+<div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross3">遗忘之海</span></div>
+<div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name cross2">斗罗大陆：零</span></div>
+<div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name cross3">卡厄思梦境</span></div>
+<div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name ">王者之弈</span></div>
+<div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name cross4">心跳陷落</span></div>
+</div>
     </div>
-
-    <!-- OPPO -->
     <div class="plat-card">
       <div class="plat-header oppo">🟢 OPPO_预约榜</div>
-      <div class="plat-body">
-        <div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name cross3">勇者幻兽录</span></div>
-        <div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name">望月</span></div>
-        <div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross4">欢乐斗萌将</span></div>
-        <div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross3">遮天：帝路争锋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross2">斗破苍穹：斗帝之路</span></div>
-        <div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross2">宗师之上</span></div>
-        <div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross2">神将传说</span></div>
-        <div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross3">镭明闪击</span></div>
-        <div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name cross3">大道仙途</span></div>
-        <div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name">盛世天下：女帝篇</span></div>
-        <div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross3">夜幕之下</span></div>
-        <div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name cross4">耀世格斗</span></div>
-        <div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross2">盗墓笔记：启程</span></div>
-        <div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name">热血江湖：觉醒</span></div>
-        <div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">斗破苍穹：异火降世</span></div>
-        <div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross3">异人之下</span></div>
-        <div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name cross3">卡厄思梦境</span></div>
-        <div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name">斗罗大陆：传承</span></div>
-        <div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name cross2">时空猎人•觉醒</span></div>
-        <div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name">匹配大师</span></div>
-      </div>
+      <div class="plat-body"><div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name cross3">勇者幻兽录</span></div>
+<div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name ">望月</span></div>
+<div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross4">欢乐斗萌将</span></div>
+<div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross3">遮天：帝路争锋</span></div>
+<div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross2">斗破苍穹：斗帝之路</span></div>
+<div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross2">宗师之上</span></div>
+<div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross2">神将传说</span></div>
+<div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross3">镭明闪击</span></div>
+<div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name cross3">大道仙途</span></div>
+<div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name ">盛世天下：女帝篇</span></div>
+<div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross3">夜幕之下</span></div>
+<div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name cross4">耀世格斗</span></div>
+<div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross2">盗墓笔记：启程</span></div>
+<div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name ">热血江湖：觉醒</span></div>
+<div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">斗破苍穹：异火降世</span></div>
+<div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross3">异人之下</span></div>
+<div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name cross3">卡厄思梦境</span></div>
+<div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name ">斗罗大陆：传承</span></div>
+<div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name cross2">时空猎人•觉醒</span></div>
+<div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name ">匹配大师</span></div>
+</div>
     </div>
-
-    <!-- 荣耀 -->
     <div class="plat-card">
       <div class="plat-header hn">🟣 荣耀_预约榜</div>
-      <div class="plat-body">
-        <div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name">赘婿</span></div>
-        <div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross3">异人之下</span></div>
-        <div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name">苍蓝前线</span></div>
-        <div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross2">向末日开炮</span></div>
-        <div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross3">三国：百将牌</span></div>
-        <div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross4">心跳陷落</span></div>
-        <div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross3">遗忘之海</span></div>
-        <div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross4">耀世格斗</span></div>
-        <div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name cross4">欢乐斗萌将</span></div>
-        <div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name cross3">勇者幻兽录</span></div>
-        <div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross2">宗师之上</span></div>
-        <div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name">七界梦谭</span></div>
-        <div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name">至尊兵王</span></div>
-        <div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name cross4">王者万象棋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">头号禁区</span></div>
-        <div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross2">时空猎人•觉醒</span></div>
-        <div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name">星途天城</span></div>
-        <div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name">萌物求生</span></div>
-        <div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name">无限轮回</span></div>
-        <div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name">逆袭的仙王</span></div>
-      </div>
+      <div class="plat-body"><div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name ">赘婿</span></div>
+<div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross3">异人之下</span></div>
+<div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name ">苍蓝前线</span></div>
+<div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross2">向末日开炮</span></div>
+<div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross3">三国：百将牌</span></div>
+<div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross4">心跳陷落</span></div>
+<div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross3">遗忘之海</span></div>
+<div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross4">耀世格斗</span></div>
+<div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name cross4">欢乐斗萌将</span></div>
+<div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name cross3">勇者幻兽录</span></div>
+<div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name cross2">宗师之上</span></div>
+<div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name ">七界梦谭</span></div>
+<div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name ">至尊兵王</span></div>
+<div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name cross4">王者万象棋</span></div>
+<div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross2">头号禁区</span></div>
+<div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name cross2">时空猎人•觉醒</span></div>
+<div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name ">星途天城</span></div>
+<div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name ">萌物求生</span></div>
+<div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name ">无限轮回</span></div>
+<div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name ">逆袭的仙王</span></div>
+</div>
     </div>
-
-    <!-- 小米 -->
     <div class="plat-card">
       <div class="plat-header mi">🟠 小米_预约榜</div>
-      <div class="plat-body">
-        <div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name cross3">夜幕之下</span></div>
-        <div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross4">耀世格斗</span></div>
-        <div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross3">镭明闪击</span></div>
-        <div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross3">遮天：帝路争锋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross2">愤怒的小鸟：经典归来</span></div>
-        <div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross2">萌宠之森</span></div>
-        <div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross2">驯龙之旅</span></div>
-        <div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross2">盗墓笔记：启程</span></div>
-        <div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name">AZURE</span></div>
-        <div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name cross3">卡厄思梦境</span></div>
-        <div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name">怪物猎人：旅人</span></div>
-        <div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name cross4">王者万象棋</span></div>
-        <div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross4">心跳陷落</span></div>
-        <div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name cross2">特种部队：集结</span></div>
-        <div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross4">欢乐斗萌将</span></div>
-        <div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name" style="color:#bbb;font-style:italic">明龙乙</span></div>
-        <div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name">蛮荒领主</span></div>
-        <div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name cross3">三国：百将牌</span></div>
-        <div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name cross3">大道仙途</span></div>
-        <div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name cross2">斗罗大陆：零</span></div>
-      </div>
-    </div>
-
-  </div><!-- /platforms-grid -->
-
-  <!-- ═══ 备注 ═══ -->
-  <div class="section" style="padding:14px 20px;">
-    <div class="section-title" style="margin-bottom:8px;">⚠️ 数据说明</div>
-    <ul style="font-size:12px;color:#666;line-height:2;padding-left:16px;">
-      <li><em style="color:#bbb">斜体灰色</em>条目（旅头、奧星热浪、明龙乙）为疑似 OCR 识别乱码，已标注，待后续确认或过滤</li>
-      <li>各平台榜单位次以当日抓取顺序为准（非官方加权排名）</li>
-      <li>荣耀、OPPO 部分历史日期（04-29/04-30）因导航异常数据质量较差，已在 05-01 修复</li>
-    </ul>
-  </div>
+      <div class="plat-body"><div class="plat-row"><span class="plat-rank r1">1</span><span class="plat-name cross3">夜幕之下</span></div>
+<div class="plat-row"><span class="plat-rank r2">2</span><span class="plat-name cross4">耀世格斗</span></div>
+<div class="plat-row"><span class="plat-rank r3">3</span><span class="plat-name cross3">镭明闪击</span></div>
+<div class="plat-row"><span class="plat-rank rn">4</span><span class="plat-name cross3">遮天：帝路争锋</span></div>
+<div class="plat-row"><span class="plat-rank rn">5</span><span class="plat-name cross2">愤怒的小鸟：经典归来</span></div>
+<div class="plat-row"><span class="plat-rank rn">6</span><span class="plat-name cross2">萌宠之森</span></div>
+<div class="plat-row"><span class="plat-rank rn">7</span><span class="plat-name cross2">驯龙之旅</span></div>
+<div class="plat-row"><span class="plat-rank rn">8</span><span class="plat-name cross2">盗墓笔记：启程</span></div>
+<div class="plat-row"><span class="plat-rank rn">9</span><span class="plat-name ">AZURE</span></div>
+<div class="plat-row"><span class="plat-rank rn">10</span><span class="plat-name cross3">卡厄思梦境</span></div>
+<div class="plat-row"><span class="plat-rank rn">11</span><span class="plat-name ">怪物猎人：旅人</span></div>
+<div class="plat-row"><span class="plat-rank rn">12</span><span class="plat-name cross4">王者万象棋</span></div>
+<div class="plat-row"><span class="plat-rank rn">13</span><span class="plat-name cross4">心跳陷落</span></div>
+<div class="plat-row"><span class="plat-rank rn">14</span><span class="plat-name cross2">特种部队：集结</span></div>
+<div class="plat-row"><span class="plat-rank rn">15</span><span class="plat-name cross4">欢乐斗萌将</span></div>
+<div class="plat-row"><span class="plat-rank rn">16</span><span class="plat-name ">明龙乙</span></div>
+<div class="plat-row"><span class="plat-rank rn">17</span><span class="plat-name ">蛮荒领主</span></div>
+<div class="plat-row"><span class="plat-rank rn">18</span><span class="plat-name cross3">三国：百将牌</span></div>
+<div class="plat-row"><span class="plat-rank rn">19</span><span class="plat-name cross3">大道仙途</span></div>
+<div class="plat-row"><span class="plat-rank rn">20</span><span class="plat-name cross2">斗罗大陆：零</span></div>
+</div>
+    </div></div>
 
   <div class="footer">
     竞渠监控 · 五平台预约榜自动抓取系统 · 2026-05-01 &nbsp;|&nbsp; OCR识别 + ADB自动化
